@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOJOS AND</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>New Dojo</h1>
+  <form action="/accept" method="POST">
+    <label>Dojo:</label>
+    <br>
+    <select name="city">
+      <option disabled selected>Select a Location</option>
+      <option>Chicago</option>
+      <option>Seattle Online</option>
+      <option>San Jose</option>
+      <option>Dallas</option>
+    </select>
+    <br>
+    <label>First Name:</label>
+    <br>
+    <input type="text" name="fullname">
+    <br>
+    <label>Last Name:</label>
+    <br>
+    <input type="text" name="fullname">
+    <br>
+    <label>Age:</label>
+    <br>
+    <input type="text" name="age">
+    <br>
+    <p></p>
+    <button>Submit</button>
+  </form>
+</body>
+
+</html>
